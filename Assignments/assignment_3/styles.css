@@ -40,7 +40,7 @@ nav a {
 .container {
     display: flex;
     flex-wrap: wrap;
-    margin: 20px 0; 
+    margin: 20px; 
 }
 
 .main-content {
