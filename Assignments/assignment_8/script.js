@@ -12,7 +12,7 @@ manButton.addEventListener("click", toggleRunning);
 
 function toggleRunning() {
     running = !running;
-    manButton.disabled = true; 
+    manButton.disabled = true;
     moveMan();
 }
 
