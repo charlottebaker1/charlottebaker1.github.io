@@ -1,0 +1,162 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+
+.content {
+  display: flex;
+  padding: 20px;
+}
+
+.main {
+  flex: 2;
+}
+
+aside {
+  flex: 1;
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+.accordion {
+  border: 1px solid #ccc;
+}
+
+.panel {
+  border-top: 1px solid #ccc;
+}
+
+.panel-heading {
+  background-color: #f1f1f1;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  border: none;
+}
+
+.panel-content {
+  display: none;
+  padding: 10px;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+/* Add media query for mobile responsiveness */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .menu-open .nav-links {
+    display: flex;
+  }
+}
+/* styles.css */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #e74c3c;
+}
+
+body {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* ... Add color scheme to other elements in your CSS */
+@media (max-width: 768px) {
+  /* Mobile styles here */
+}
+
+@media (max-width: 1024px) {
+  /* Tablet styles here */
+}
+
+/* Add more media queries as needed */
+/* styles.css */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 999; /* Ensure it's above other content */
+}
+
+.logo img {
+  width: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}

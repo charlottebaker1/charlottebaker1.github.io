@@ -1,0 +1,13 @@
+[
+    {
+      "title": "Book 1",
+      "description": "Lorem ipsum...",
+      "image": "images/book1.jpg"
+    },
+    {
+      "title": "Book 2",
+      "description": "Lorem ipsum...",
+      "image": "images/book2.jpg"
+    }
+  ]
+  
