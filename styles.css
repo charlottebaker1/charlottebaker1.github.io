@@ -23,6 +23,7 @@ h1 {
 }
 
 h2 {
+    text-align: center;
     color: white;
     font-weight: bold;
     font-size: 35px;
@@ -52,6 +53,22 @@ main {
     padding: 20px;
     text-align: center;
     width: 300px;
+}
+
+.project-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.project-box .assignment-box {
+    margin: 10px;
 }
 
 .assignment-box h4 {
