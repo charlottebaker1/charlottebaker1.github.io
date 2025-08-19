@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Your Website</title>
+  <link rel="stylesheet" href="calendar.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="calendar.html">Calendar</a></li>
+      <li><a href="school.html">School</a></li>
+      <li><a href="notes.html">Notes</a></li>
+      <li><a href="todo.html">To-Do List</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Header -->
+  <header class="main-header">
+    <h1>Your Website</h1>
+  </header>
+
+  <!-- Home Page Content -->
+  <section class="home-content">
+    <!-- Placeholder images -->
+    <div class="image-row">
+      <!-- Image 1 -->
+      <img src="placeholder1.jpg" alt="Placeholder 1">
+      <!-- Image 2 -->
+      <img src="placeholder2.jpg" alt="Placeholder 2">
+      <!-- Image 3 -->
+      <img src="placeholder3.jpg" alt="Placeholder 3">
+    </div>
+
+    <!-- Sticky Notes -->
+    <div class="sticky-notes">
+      <!-- Note 1 -->
+      <div class="note yellow"></div>
+      <!-- Note 2 -->
+      <div class="note blue"></div>
+      <!-- Note 3 -->
+      <div class="note green"></div>
+    </div>
+
+    <!-- Remember Section -->
+    <div class="remember-section">
+      <h2>Remember!</h2>
+      <textarea placeholder="Enter tasks or events"></textarea>
+      <button onclick="jumpToAssignments()">Jump to Assignments</button>
+    </div>
+  </section>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
