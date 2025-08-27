@@ -63,13 +63,6 @@ a {
 a:hover {
     color: #a94494;
 }
-nav {
-    position: absolute;
-    top: 35px;
-    left: 70px;
-    color: white;
-    font-size: 20px;
-}
 
 main {
     display: flex;
@@ -107,3 +100,12 @@ main {
 .assignment-box a:hover {
     color: #6b8e8b;
 }
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #a6acb9;
+    margin:25px auto;
+    width: 80%; 
+  }
+  
