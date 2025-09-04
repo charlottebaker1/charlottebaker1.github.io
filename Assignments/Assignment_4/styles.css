@@ -1,0 +1,166 @@
+/* Charlotte Baker CSCE 242 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fdfce6;
+    color: #2c3e50;
+  }
+
+  header {
+    text-align: center;
+    background-color: #fdfce6;
+  }
+  
+  header h1 {
+    padding: 20px;
+  }
+  
+  nav ul {
+    display: flex;
+    background-color: #e27d7d;
+    list-style: none;
+    justify-content: space-around;
+  }
+  
+  nav li {
+    flex: 1;
+    border-left: 1px solid #fff;
+  }
+  
+  nav li:first-child {
+    border-left: none;
+  }
+  
+  nav a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .top-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .left-column, .right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .idea {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  
+  .idea img {
+    flex-shrink: 0;
+  }
+  
+  .idea .text {
+    max-width: 600px;
+  }
+
+  .bottom-section {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .sidebar {
+    background-color: #e27d7d;
+    padding: 15px;
+    width: 150px;
+    color: white;
+    flex-shrink: 0;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    margin-top: 10px;
+  }
+  
+  .sidebar li {
+    margin: 10px 0;
+  }
+  
+  .sidebar a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex: 1;
+  }
+  
+  .box {
+    width: 200px;
+    padding: 10px;
+    color: white;
+  }
+  
+  .box img {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+  }
+ 
+  .box.title {
+    background-color: #95a5a6; 
+  }
+  
+  .box.gallery {
+    background-color: #7da6e2; 
+  }
+  
+  footer {
+    background-color: #e27d7d;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+  }
+  
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+    }
+  
+    .top-section {
+      flex-direction: column;
+    }
+  
+    .idea {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .bottom-section {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .grid {
+      justify-content: center;
+    }
+  }
+  
