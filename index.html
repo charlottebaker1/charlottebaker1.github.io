@@ -2,58 +2,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Charlotte Baker CSCE 242</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <title>Charlotte Baker CSCE 242</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div id="content">
-        <header>
-            <h1>CSCE 242: Web Applications</h1>
-            <p>This course is about web programming using various languages and methods such as HTML, CSS, JavaScript.</p>
-            <hr>
-            <h3>Charlotte Baker's <a href="https://github.com/charlottebaker1/charlottebaker1.github.io">GitHub Code Repository</a></h3>
-            <hr>
-            <h2>Assignments:</h2>
-        </header>
-        
-        <main>
-            <!-- Assignment 1 -->
-            <section class="assignment-box">
-                <h4><a href="Assignments/Assignment_1/index.html">Assignment 1 - Basic HTML</a></h4>
-                <img src="images/assignment1.png" alt="Assignment 1 Screenshot">
-                <p>This assignment helped me learn the fundamentals of HTML such as headings, lists, and links.</p>
-            </section>
+  <div id="content">
+    <header>
+      <h1>CSCE 242: Web Applications</h1>
+      <p>This course is about web programming using various languages and methods such as HTML, CSS, JavaScript.</p>
 
-            <!-- Assignment 2 -->
-            <section class="assignment-box">
-                <h4><a href="Assignments/Assignment_2/index.html">Assignment 2 - Basic CSS</a></h4>
-                <img src="images/assignment2.png" alt="Assignment 2 Screenshot">
-                <p>Here, I learned how to style HTML using CSS including colors, fonts, and box model properties.</p>
-            </section>
+      <hr>
+      <h3>
+        Charlotte Baker's
+        <a href="https://github.com/charlottebaker1/charlottebaker1.github.io">GitHub Code Repository</a>
+      </h3>
+      <hr>
 
-            <!-- Assignment 3 -->
-            <section class="assignment-box">
-                <h4><a href="index.html">Assignment 3 - Page Layout with Flexbox</a></h4>
-                <img src="images/assignment3.png" alt="Assignment 3 Screenshot">
-                <p>In this task, I used Flexbox to create a layout for my main page that looks better and fits assignments.</p>
-            </section>
+      <nav class="main-nav" aria-label="Main">
+        <a href="#assignments">Assignments</a>
+        <a href="#projects">Projects</a>
+      </nav>
+    </header>
 
-            <!-- Assignment 4 -->
-            <section class="assignment-box">
-                <h4><a href="Assignments/Assignment_4/index.html">Assignment 3 - Page Layout</a></h4>
-                <img src="images/assignment4.png" alt="Assignment 4 Screenshot">
-                <p>In this assignment, I used Flexbox to create a responsive layout and align items across different screen sizes for a sample website.</p>
-            </section>
+    <main>
+      <h2 id="assignments">Assignments</h2>
 
-        
+      <section class="cards-grid" aria-label="Assignments list">
+        <!-- Assignment 1 -->
+        <article class="assignment-box">
+          <h4><a href="Assignments/Assignment_1/index.html">Assignment 1 - Basic HTML</a></h4>
+          <img src="images/assignment1.png" alt="Screenshot of Assignment 1 page">
+          <p>This assignment helped me learn the fundamentals of HTML such as headings, lists, and links.</p>
+        </article>
 
-        </main>
+        <!-- Assignment 2 -->
+        <article class="assignment-box">
+          <h4><a href="Assignments/Assignment_2/index.html">Assignment 2 - Basic CSS</a></h4>
+          <img src="images/assignment2.png" alt="Screenshot of Assignment 2 page">
+          <p>Here, I learned how to style HTML using CSS including colors, fonts, and box model properties.</p>
+        </article>
 
-        <footer>
-            <p>&copy; 2025 Charlotte Baker | CSCE 242</p>
-        </footer>
-    </div>
+        <!-- Assignment 3 -->
+        <article class="assignment-box">
+          <h4><a href="index.html">Assignment 3 - Page Layout with Flexbox</a></h4>
+          <img src="images/assignment3.png" alt="Screenshot of Assignment 3 page layout">
+          <p>In this task, I used Flexbox to create a layout for my main page that looks better and fits assignments.</p>
+        </article>
+
+        <!-- Assignment 4 -->
+        <article class="assignment-box">
+          <h4><a href="Assignments/Assignment_4/index.html">Assignment 4 - Page Layout</a></h4>
+          <img src="images/assignment4.png" alt="Screenshot of Assignment 4 responsive layout">
+          <p>Created a responsive layout and aligned items across different screen sizes for a sample website.</p>
+        </article>
+      </section>
+
+      <hr class="section-divider">
+
+      <h2 id="projects">Projects</h2>
+      <p class="section-intro">
+        Below are my project steps for the semester. Each project has its own section with the required steps:
+        <strong>Topic (PDF)</strong>, <strong>Embedded Wireframe</strong>, and future steps “more to come”.
+      </p>
+
+        <div class="project-card__body">
+          <article class="project-step">
+            <h4>Topic (PDF)</h4>
+            <p>A brief document outlining the project goals.</p>
+
+            <div class="embed-wrap">
+              <iframe
+                title="Project 1 Topic PDF"
+                src="projects/part1/project-proposal.pdf#view=FitH"
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <p class="tiny-note">
+              PDF version <a href="projects/part1/project-proposal.pdf" target="_blank" rel="noopener">Open the PDF</a>.
+            </p>
+          </article>
+
+          <article class="project-step">
+            <h4>Wireframe (Embedded)</h4>
+            <p>Wireframe for my project.</p>
+
+            <figure class="wireframe">
+              <img src="projects/wireframe.png" alt="Wireframe for Project 1">
+              <figcaption>Wireframe overview (exported from MockITT and embedded on the page).</figcaption>
+            </figure>
+          </article>
+
+
+          <article class="project-step muted">
+            <h4>More to come</h4>
+            <p>Next project assignments.</p>
+          </article>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Charlotte Baker | CSCE 242</p>
+    </footer>
+  </div>
 </body>
 </html>
