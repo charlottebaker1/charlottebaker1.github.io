@@ -1,0 +1,23 @@
+/* Charlotte Baker */
+:root{--ink:#3e4a61;--ink2:#5b5b5b;--line:#dadde6;--bg:#f6f8fb}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:'Raleway',sans-serif;background:var(--bg);color:var(--ink2);padding:24px;display:flex;justify-content:center}
+.wrap{background:#fff;width:min(1100px,95vw);border:1px solid var(--line);border-radius:14px;padding:24px;box-shadow:0 6px 18px rgba(0,0,0,.08)}
+.page-header{text-align:center}
+h1{color:var(--ink);margin:4px 0 8px}
+h2{color:var(--ink);margin:12px 0}
+a{color:#6b8e8b;font-weight:700;text-decoration:none}
+a:hover{color:#a94494}
+.crumbs{margin:8px 0 0}
+.pills{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:14px 0 20px}
+.pills a{padding:8px 12px;border:2px solid var(--line);border-radius:999px;background:#fff}
+.pills a:hover{background:#faf6ff}
+.wf-section{margin:18px 0 26px}
+.wf-figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:8px}
+.wf-figure img{width:100%;max-width:980px;display:block;border:1px solid var(--line);border-radius:10px;box-shadow:0 8px 20px rgba(0,0,0,.06)}
+.wf-figure figcaption{font-size:14px;color:#6b6b6b;text-align:center}
+.hint{text-align:center;margin:6px 0 12px}
+.embed-wrap{position:relative;width:100%;padding-top:62.5%;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fafafa}
+.embed-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.foot{text-align:center;margin-top:24px;color:#777}
