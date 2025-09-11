@@ -1,4 +1,8 @@
 /* Charlotte Baker CSCE 242 */
+/* 
+For reference, attempted some BEM conventions here, but not strictly followed in
+.project components but likely will end up changing as I add more features
+*/
 :root{
   --brand-pink:#a94494;
   --brand-ink:#3e4a61;
