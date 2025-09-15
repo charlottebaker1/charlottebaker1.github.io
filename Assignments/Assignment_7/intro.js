@@ -1,4 +1,5 @@
 //Charlotte Baker CSCE 242
+//Used in-class code from intro.js
 document.getElementById("sec-sunny").onclick = () => {
     document.getElementById("sunny-lyrics").innerHTML = `
         <p>Here comes the sun</p>
