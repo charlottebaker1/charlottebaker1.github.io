@@ -1,0 +1,103 @@
+/* Charlotte Baker CSCE 242 */
+:root {
+    --main-background-color:#EDF1E6;
+    --other-background-color:white;
+    --primary-color:#4E8C8D;
+    --gallery-color:#F2D8C9;
+    --circle-color: black;
+}
+
+body {
+    background:var(--main-background-color);
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+}
+
+#content {
+    background:var(--other-background-color);
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    border-radius:5px;
+}
+
+header, footer {
+    color:var(--primary-color);
+    position:relative;
+    padding:20px 0 10px;
+    text-align:center;
+}
+
+h1 {
+    margin:10px 0 0;
+}
+
+h2 {
+    margin:0 0 10px; color:#d88490; font-weight:700;
+}
+
+main {
+    padding:20px;
+}
+
+.panel {
+    flex: flex;
+    background:var(--gallery-color);
+    border:2px solid rgba(0, 0, 0, 0.35);
+    min-height:150px;
+    padding: 15px;
+}
+
+.panel h3 {
+    margin-top:0;
+    text-align:center;
+    color:var(--primary-color);
+}
+
+.hidden {
+    display:none;
+}
+
+.boxes {
+    flex-wrap:wrap;
+    justify-content:space-between;
+    margin:0;
+    padding:0;
+}
+
+.boxes section {
+    width:100%;
+    padding:14px;
+    margin:10px 0;
+}
+
+#img-weather {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    max-width:100%;
+    max-height:140px; 
+    height:auto;
+    object-fit:contain;
+}
+
+.indent {
+    text-indent:40px;
+}
+
+
+@media only screen and (min-width: 800px) {
+    .columns {
+        display:flex;
+    }
+    .boxes {
+        justify-content:space-between;
+    }
+    .boxes section {
+        max-width:30%;
+    }
+}
+
+footer p {
+    text-align:center
+}

@@ -1,14 +1,53 @@
-<!-- Charlotte Baker CSCE 242 -->
- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title> JavaScript Functions, Buttons, More </title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Assignment 7</h1>
-    </header>
-</body>
+<!--Charlotte Baker CSCE 242-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <title>Assignment 7</title>
+    </head>
+    <body>
+        <div id="content">
+            <header>
+                <h1>Assignment 7</h1>
+                <h2>Introduction to JavaScript</h2>
+            </header>
+
+            <main class="columns boxes">
+                <section id="sec-sunny" class="panel">
+                    <h3>Sunny Times</h3>
+                    <div id="sunny-lyrics"></div>
+                </section>
+
+                <section class="panel">
+                    <h3>Select A Color:</h3>
+                    <p>
+                        <input type="color" id="color-picker">
+                    </p>
+                    <p id="p-color"></p>
+                </section>
+
+                <section class="panel">
+                    <h3>Image Change</h3>
+                    <img id="img-weather" src="cloudy.png" alt="Weather image">
+                </section>
+            </main>
+
+            <main class="boxes">
+                <section>
+                    <p>
+                        <label for="txt-emotion">Enter Emotion:</label>
+                        <input type="text" id="txt-emotion">
+                    </p>
+                    <p id="p-emotion"></p>
+                    <img id="img-emotion" src="happy.png" class="hidden" alt="Happy face">
+                </section>
+            </main>
+
+            <footer>
+                <p>&copy; Charlotte Baker</p>
+            </footer>
+        </div>
+        <script src="intro.js"></script>
+    </body>
+</html>
