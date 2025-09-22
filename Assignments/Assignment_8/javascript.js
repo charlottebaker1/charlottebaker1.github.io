@@ -90,6 +90,6 @@ function tick() {
 }
 
 tick()
-setInterval(() => {
+setInterval(() =>{
   tick()
 }, 1000)
