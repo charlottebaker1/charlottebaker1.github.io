@@ -1,0 +1,54 @@
+<!--Charlotte Baker CSCE 242-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Assignment 8 • If Statements</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Assignment 8</h1>
+      <h2>If Statements</h2>
+
+      <nav class="menu" id="menu">
+        <div class="menu-toggle" id="menuBtn">
+          <span class="arrow">▾</span> Menu
+        </div>
+        <ul>
+          <li><a id="goPlant" class="btnlike">Exercise 1</a></li>
+          <li><a id="goClock" class="btnlike">Exercise 2</a></li>
+        </ul>
+      </nav>
+
+      <div class="shell">
+        <div id="planting" class="section">
+          <div class="center">
+            <h3>How many days has it been since watering your plant?</h3>
+          </div>
+          <div class="range center">
+            <input id="days" type="range" min="1" max="12" value="1">
+          </div>
+          <div class="imgbox hidden" id="pImg">
+            <img id="plantImg" src="" alt="">
+          </div>
+          <div class="center msg hidden" id="pMsg1"></div>
+          <div class="center msg hidden" id="pMsg2"></div>
+        </div>
+
+        <div id="clock" class="section hidden">
+          <div class="center">
+            <h3>Our Digital Clock</h3>
+          </div>
+          <div class="center clock" id="timeNow"></div>
+        </div>
+      </div>
+
+      <p class="brand footer">@Charlotte Baker</p>
+    </div>
+  </div>
+  <script src="javascript.js"></script>
+</body>
+</html>

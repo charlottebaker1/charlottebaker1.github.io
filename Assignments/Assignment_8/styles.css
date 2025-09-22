@@ -1,0 +1,200 @@
+/* Charlotte Baker CSCE 242 */
+
+:root{
+  --bg:#eef0e7;
+  --edge:#b7c9c3;
+  --title:#3f6f78;
+  --accent:#dd7a7a;
+  --text:#4f6e74;
+}
+
+* {
+  box-sizing:border-box;
+}
+
+body {
+  margin:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  color:var(--text);
+  background:#fff;
+}
+
+.wrap {
+  max-width:980px;
+  margin:24px auto;
+  padding:0 16px;
+}
+
+.card {
+  background:var(--bg);
+  padding:28px;
+  border-radius:6px;
+}
+
+h1 {
+  margin:0 0 6px;
+  font-size:44px;
+  color:var(--title);
+  text-align:center;
+  letter-spacing:.5px;
+}
+
+h2 {
+  margin:0 0 18px;
+  text-align:center;
+  color:var(--accent);
+  font-size:30px;
+}
+
+.topline {
+  margin:0 auto 16px;
+  text-align:center;
+  opacity:.9;
+}
+
+.shell {
+  border:2px solid var(--edge);
+  border-radius:4px;
+  padding:22px;
+  max-width:760px;
+  margin:0 auto 18px;
+  background:#fff;
+}
+
+.brand {
+  margin-top:10px;
+  text-align:center;
+  opacity:.8;
+}
+
+.menu {
+  max-width:760px;
+  margin:0 auto 18px;
+  position:relative;
+}
+
+.menu-toggle {
+  display:flex;
+  align-items:center;
+  gap:8px;
+  cursor:pointer;
+  width:max-content;
+  color:var(--title);
+  user-select:none;
+}
+
+.menu-toggle .arrow {
+  font-size:18px;
+  line-height:1;
+}
+
+.menu ul {
+  list-style:none;
+  margin:8px 0 0;
+  padding:8px;
+  border:2px solid var(--edge);
+  border-radius:4px;
+  background:#f8fbf9;
+  display:none;
+}
+
+.menu li {
+  padding:8px 10px;
+  border-radius:4px;
+}
+
+.menu a {
+  color:var(--title);
+  text-decoration:none;
+  display:block;
+}
+
+.menu a:hover {
+  cursor:pointer;
+  opacity:.8;
+}
+
+.menu.open ul {
+  display:block;
+}
+
+.menu.open .arrow {
+  transform:rotate(180deg);
+}
+
+@media (min-width:720px) {
+  .menu-toggle {
+    display:none;
+  }
+
+  .menu ul {
+    display:flex;
+    justify-content:center;
+    gap:0;
+    border:none;
+    background:transparent;
+    margin:0;
+  }
+
+  .menu li {
+    padding:0 10px;
+    position:relative;
+  }
+
+  .menu li:not(:last-child)::after {
+    content:"|";
+    position:absolute;
+    right:-6px;
+    top:0;
+    bottom:0;
+    margin:auto;
+    height:max-content;
+    opacity:.6;
+  }
+}
+
+.center {
+  text-align:center;
+}
+
+.range {
+  width:280px;
+  margin:10px auto;
+}
+
+.hidden {
+  display:none;
+}
+
+.imgbox {
+  height:150px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:10px 0;
+}
+
+.imgbox img {
+  max-height:150px;
+  max-width:200px;
+}
+
+.msg {
+  line-height:1.5;
+}
+
+.clock {
+  font-size:18px;
+  margin-top:12px;
+}
+
+.btnlike {
+  border:none;
+  background:none;
+  font:inherit;
+  padding:0;
+}
+
+.footer {
+  margin-top:8px;
+}
