@@ -1,22 +1,13 @@
-/* Charlotte Baker CSCE 242 */
-
-:root{
-  --bg:#eef0e7;
-  --edge:#b7c9c3;
-  --title:#3f6f78;
-  --accent:#dd7a7a;
-  --text:#4f6e74;
-}
-
+/* harlotte Baker CSCE 242 */
 * {
   box-sizing:border-box;
 }
 
 body {
   margin:0;
-  font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-  color:var(--text);
-  background:#fff;
+  font-family:Arial, Helvetica, sans-serif;
+  color:#4f6e74;
+  background:#ffffff;
 }
 
 .wrap {
@@ -26,7 +17,7 @@ body {
 }
 
 .card {
-  background:var(--bg);
+  background:#eef0e7;
   padding:28px;
   border-radius:6px;
 }
@@ -34,7 +25,7 @@ body {
 h1 {
   margin:0 0 6px;
   font-size:44px;
-  color:var(--title);
+  color:#3f6f78;
   text-align:center;
   letter-spacing:.5px;
 }
@@ -42,7 +33,7 @@ h1 {
 h2 {
   margin:0 0 18px;
   text-align:center;
-  color:var(--accent);
+  color:#dd7a7a;
   font-size:30px;
 }
 
@@ -53,12 +44,12 @@ h2 {
 }
 
 .shell {
-  border:2px solid var(--edge);
+  border:2px solid #b7c9c3;
   border-radius:4px;
   padding:22px;
   max-width:760px;
   margin:0 auto 18px;
-  background:#fff;
+  background:#ffffff;
 }
 
 .brand {
@@ -74,28 +65,29 @@ h2 {
 }
 
 .menu-toggle {
-  display:flex;
-  align-items:center;
-  gap:8px;
+  display:inline-block;
+  padding:6px 8px;
   cursor:pointer;
-  width:max-content;
-  color:var(--title);
+  color:#3f6f78;
   user-select:none;
 }
 
 .menu-toggle .arrow {
-  font-size:18px;
-  line-height:1;
+  margin-right:6px;
 }
 
 .menu ul {
   list-style:none;
   margin:8px 0 0;
   padding:8px;
-  border:2px solid var(--edge);
+  border:2px solid #b7c9c3;
   border-radius:4px;
   background:#f8fbf9;
   display:none;
+}
+
+.menu.open ul {
+  display:block;
 }
 
 .menu li {
@@ -103,8 +95,8 @@ h2 {
   border-radius:4px;
 }
 
-.menu a {
-  color:var(--title);
+.menu a{
+  color:#3f6f78;
   text-decoration:none;
   display:block;
 }
@@ -114,29 +106,22 @@ h2 {
   opacity:.8;
 }
 
-.menu.open ul {
-  display:block;
-}
-
-.menu.open .arrow {
-  transform:rotate(180deg);
-}
-
 @media (min-width:720px) {
   .menu-toggle {
     display:none;
   }
 
   .menu ul {
-    display:flex;
-    justify-content:center;
-    gap:0;
+    display:block;
+    text-align:center;
     border:none;
     background:transparent;
     margin:0;
+    padding:0;
   }
 
   .menu li {
+    display:inline-block;
     padding:0 10px;
     position:relative;
   }
@@ -148,7 +133,7 @@ h2 {
     top:0;
     bottom:0;
     margin:auto;
-    height:max-content;
+    height:12px;
     opacity:.6;
   }
 }
@@ -168,9 +153,8 @@ h2 {
 
 .imgbox {
   height:150px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  display:block;
+  text-align:center;
   margin:10px 0;
 }
 
@@ -183,7 +167,7 @@ h2 {
   line-height:1.5;
 }
 
-.clock {
+.clock{
   font-size:18px;
   margin-top:12px;
 }

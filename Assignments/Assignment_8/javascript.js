@@ -1,7 +1,15 @@
 // Charlotte Baker CSCE 242
 const menu = document.getElementById("menu")
-document.getElementById("menuBtn").onclick = (event) => {
-  menu.classList.toggle("open")
+const menuBtn = document.getElementById("menuBtn")
+menuBtn.onclick = (event) => {
+  if (menu.classList.contains("open")) {
+    menu.classList.remove("open")
+    menuBtn.querySelector(".arrow").innerHTML = "▾"
+  }
+  else {
+    menu.classList.add("open")
+    menuBtn.querySelector(".arrow").innerHTML = "▴"
+  }
 }
 
 const planting = document.getElementById("planting")
@@ -37,21 +45,18 @@ function showPlant(d) {
     p1.innerHTML = "It's been " + d + " days since watering your plant"
     p2.innerHTML = "Your plant is healthy and happy"
   }
-
   else if (d >= 3 && d <= 5) {
     plantImg.src = "images/plant_needs_water.png"
     plantImg.alt = "needs water"
     p1.innerHTML = "It's been " + d + " days since watering your plant"
     p2.innerHTML = "Your plant needs watering"
   }
-
   else if (d >= 6 && d <= 9) {
     plantImg.src = "images/plant_wilting.png"
     plantImg.alt = "wilting plant"
     p1.innerHTML = "It's been " + d + " days since watering your plant"
     p2.innerHTML = "Leaves are dropping, the color is changing, water soon"
   }
-  
   else {
     plantImg.src = "images/plant_dead.png"
     plantImg.alt = "dead plant"
@@ -69,14 +74,22 @@ days.oninput = (event) => {
   showPlant(value)
 }
 
+function toTimeString(date) {
+  const h = date.getHours()
+  const m = date.getMinutes()
+  const am = h < 12
+  const hr = ((h + 11) % 12) + 1
+  const mm = m < 10 ? "0" + m : "" + m
+  const ap = am ? "am" : "pm"
+  return hr + ":" + mm + " " + ap
+}
+
 function tick() {
   const now = new Date()
-  now.setSeconds(0, 0)
-  const t = now.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" }).toLowerCase()
-  document.getElementById("timeNow").innerHTML = t
+  document.getElementById("timeNow").innerHTML = toTimeString(now)
 }
 
 tick()
 setInterval(() => {
   tick()
-}, 60000)
+}, 1000)
