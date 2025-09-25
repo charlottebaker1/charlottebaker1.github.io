@@ -1,0 +1,195 @@
+/* Charlotte Baker CSCE 242 */
+:root{
+  --sky-day: #b9e0ea;
+  --sky-night: #000;
+  --title: #5a8087;
+  --accent: #e08c93;
+}
+
+* { 
+    box-sizing: border-box;
+}
+
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  background: var(--sky-day);
+  transition: background 300ms ease;
+}
+
+body.night{
+  background: var(--sky-night);
+  color:#dbe9ef;
+}
+
+header{
+  text-align:center;
+  padding: 16px 8px 8px;
+}
+
+h1{
+  margin:0 0 4px;
+  font-size: 42px;
+  color: var(--title);
+  letter-spacing: .5px;
+  font-weight: 700;
+}
+
+h2{
+  margin: 0 0 12px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+#controls{
+  text-align:center;
+  margin-bottom: 12px;
+}
+
+button{
+  padding: 4px 10px;
+  font-size: 14px;
+  cursor:pointer;
+}
+
+.stage{
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 16px 60px;
+  min-height: 420px;
+}
+
+/* CSS Art*/
+.sun, .moon{
+  position:absolute;
+  right: 42px;
+  top: 42px;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+}
+
+.sun{
+  background: #ffd100;
+  box-shadow: 0 0 0 10px rgba(255,209,0,.25) inset;
+}
+
+.moon{
+  background: #efe596;
+}
+
+.moon::after{
+  content:"";
+  position:absolute;
+  right: -14px;
+  top: 10px;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  background: #050617;
+}
+
+/* Cloud CSS Art
+   Used references:
+   - Blob/rounded shapes: https://css-tricks.com/shape-blobbing-css/
+   - Looked through basics on CodePen: https://freefrontend.com/css-clouds/
+   */
+
+.cloud{
+  position: relative;
+  width: 140px;
+  height: 52px;
+  background: #ffffff;
+  border-radius: 32px;
+  filter: drop-shadow(0 2px 0 rgba(0,0,0,.05));
+  margin: 0 18px;
+  opacity: .95;
+}
+
+.cloud::before, .cloud::after{
+  content:"";
+  position:absolute;
+  background:#ffffff;
+  border-radius:50%;
+}
+
+.cloud::before{
+  width: 70px; height: 70px;
+  left: 18px; top: -28px;
+}
+
+.cloud::after{
+  width: 80px; height: 80px;
+  right: 8px; top: -36px;
+}
+
+body.night .cloud,
+body.night .cloud::before,
+body.night .cloud::after{
+  background:#e9e9e9;
+}
+
+.tree{
+  position: relative;
+  width: 80px;
+  height: 100px;
+  margin: 0 28px;
+}
+
+.tree .leaves{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #0a7809;
+  margin: 0 auto;
+  box-shadow: 0 0 0 6px rgba(0,0,0,.03) inset;
+}
+
+.tree .trunk{
+  width: 18px;
+  height: 26px;
+  background: #8b4a2b;
+  border-radius: 4px;
+  margin: 6px auto 0;
+}
+
+.row{
+  display:flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+}
+
+#cloud-row{
+    margin: 22px 0 26px;
+}
+
+#tree-row{
+    margin: 28px 0 0;
+}
+
+footer{
+  text-align:center;
+  padding: 16px 0 32px;
+  color: rgba(255,255,255,.8);
+}
+
+body:not(.night) footer{
+  color: #5a8087;
+}
+
+/* cloud positioning fixes */
+.sun, .moon {
+  position: absolute;
+  right: 30px;
+  top: 20px; 
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+#cloud-row {
+  margin: 140px 0 26px;   
+}
