@@ -1,0 +1,134 @@
+/* Charlotte Baker CSCE 242*/
+body {
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    background:#f6faf7;
+    color:#2a2a2a;
+    margin:0;
+    padding:32px 20px 60px;
+}
+
+h1 {
+    text-align:center;
+    margin:0;
+    font-size:40px;
+    letter-spacing:.5px;
+}
+
+h2 { 
+    text-align:center; 
+    color:#ba4e58; 
+    margin:10px 0 26px; 
+}
+.credits {
+    text-align:center; 
+    margin-top:16px; 
+    color:#666; 
+    font-size:14px; 
+}
+.credits a {
+    color:#ba4e58;
+}
+
+#gallery {
+    max-width:1100px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap:22px;
+}
+
+.card {
+    position:relative;
+    border:6px solid #eaa0a6;
+    border-radius:14px;
+    overflow:hidden;
+    background:#fff;
+    transition:transform .12s ease-in-out;
+    cursor:pointer;
+}
+.card:hover { 
+    transform:translateY(-2px);
+}
+
+.card img {
+    display:block;
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+.caption {
+    position:absolute;
+    left:0; right:0; bottom:0;
+    background:rgba(234,160,166,.92);
+    color:#fff;
+    padding:14px 12px;
+    text-align:center;
+    font-weight:700;
+    letter-spacing:.2px;
+    opacity:0;
+    transition:opacity .15s ease-in-out;
+}
+
+.card:hover .caption {
+     opacity:1; 
+}
+
+#popup {
+  position:fixed;
+  inset:0;
+  display:flex;             
+  align-items:center;
+  justify-content:center;
+  background:rgba(0,0,0,.45);
+  z-index:10;
+}
+
+.hidden {
+    display:none;
+}
+
+#popup.hidden {
+    display:none;
+}
+
+.popup-card {
+  width:min(92vw, 520px);
+  background:#fff9f5;
+  border:6px solid #eba6ad;
+  border-radius:16px;
+  box-shadow:0 22px 60px rgba(0,0,0,.25);
+  padding:18px 18px 22px;
+  position:relative;
+  text-align:center;
+}
+
+.popup-card h3 {
+  margin:4px 30px 12px;
+  color:#ba4e58;
+}
+
+#close {
+  position:absolute;
+  right:12px;
+  top:8px;
+  font-size:22px;
+  color:#c05b63;
+  cursor:pointer;
+  user-select:none;
+}
+
+#after-img {
+  width:100%;
+  height:360px;
+  object-fit:cover;
+  border-radius:10px;
+  background:#fff;
+}
+
+footer {
+  text-align:center;
+  margin-top:28px;
+  color:#666;
+  font-size:14px;
+}
