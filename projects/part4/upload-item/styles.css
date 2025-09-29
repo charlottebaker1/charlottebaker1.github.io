@@ -388,3 +388,29 @@ hr {
 @media (prefers-reduced-motion: reduce) {
     * { transition:none !important; }
 }
+/* show hamburger only on mobile */
+#menu-toggle {
+  margin-left:auto;
+  display:none;
+  background:transparent;
+  border:1px solid var(--border);
+  padding:6px 10px;
+  border-radius:6px;
+  font-size:18px;
+  line-height:1;
+  cursor:pointer;
+}
+
+
+@media only screen and (max-width:900px) {
+  #menu-toggle { display:inline-block; }
+  #main-nav { width:100%; order:3; }     
+  #main-nav ul {
+    display:none;          
+    flex-direction:column;     
+    gap:8px;
+    margin-top:10px;
+  }
+  #main-nav.open ul { display:flex; }    
+}
+
