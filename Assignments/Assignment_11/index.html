@@ -1,0 +1,49 @@
+<!--Charlotte Baker CSCE 242-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Assignment 11: Classes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="page-head">
+    <h1>Assignment 11</h1>
+    <p class="subtitle">Classes</p>
+  </header>
+
+  <main id="painting-list" class="gallery"></main>
+
+  <div id="detailsModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top">
+      <header class="w3-container modal-head">
+        <span id="closeModal" class="w3-button w3-display-topright" title="Close">&times;</span>
+        <h3 id="modalTitle">Painting Title</h3>
+        <p id="modalArtist" class="byline">by Artist Name</p>
+      </header>
+
+      <div class="w3-container modal-body">
+        <div id="frameWrap" class="frame-off">
+          <img id="modalImage" alt="">
+        </div>
+        <p id="frameNote" class="frame-note"></p>
+      </div>
+      <div class="w3-container modal-foot">
+        <button id="closeBtn" class="w3-button w3-light-grey">Close</button>
+      </div>
+    </div>
+  </div>
+
+    <footer class="credit">
+        <p>All images from <a href="https://www.topofart.com/top-100-art-reproductions.php?srsltid=AfmBOoqqekYZ0aYuegnHer4h81rJT0YxGCc7KQUv2kjB0iSpj1tFAX45" target="_blank">Top Of Art</a></p>
+     <p class="small">@Charlotte Baker</p>
+    </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -23,9 +23,25 @@ const showShoes = async() => {
         h3.innerHTML = shoe.name;
         section.append(h3);
 
+        const p = document.createElement("p");
+        p.innerHTML = `<strong>Color:</strong> ${shoe.color}`;
+        section.append(p);
+
+        const p2 = document.createElement("p");
+        p2.innerHTML = `<strong>Price:</strong> $${shoe.price}`;
+        section.append(p2);
+
         const img = document.createElement("img");
         img.src = `images/json/${shoe.image}`;
         section.append(img);
+
+        const ul = document.createElement("ul");
+        section.append(ul);
+        shoe.reviews.forEach((review)=>{
+            const li = document.createElement("li");
+            li.innerHTML = review;
+            ul.append(li);
+        });
     });
 }
 showShoes();
