@@ -1,0 +1,56 @@
+[
+    {
+    "_id":1,
+    "title": "Cute Top",
+    "type": "Top",
+    "color": "white",
+    "season": "Spring",
+    "img":"images/frilltop.png"
+    },
+
+    {
+    "_id":2,
+    "title": "Denim Shorts",
+    "type": "Shorts",
+    "color": "blue",
+    "season": "Summer",
+    "img": "images/shorts.png"
+    },
+
+    {
+    "_id":3,
+    "title": "Comfy Sweatshirt",
+    "type": "Sweatshirt",
+    "color": "grey",
+    "season": "Fall",
+    "img": "images/sweatshirt.png"
+    },
+
+    {
+    "_id":4,
+    "title": "Warm Sweater",
+    "type": "Sweater",
+    "color": "brown",
+    "season": "Winter",
+    "img": "images/sweater.png"
+    },
+
+    {
+    "_id":5,
+    "title": "V-neck Top",
+    "type": "Top",
+    "color": "white",
+    "season": "Spring",
+    "img":"images/whitetop.png"
+    },
+
+    {
+    "_id":6,
+    "title": "Blue tank",
+    "type": "Top",
+    "color": "blue",
+    "season": "Summer",
+    "img": "images/bluetop.png"
+    }
+
+]
