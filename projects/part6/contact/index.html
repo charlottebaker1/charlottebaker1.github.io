@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Closet - Contact</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="content">
+
+  <header id="main-header">
+    <img src="images/logo.png" alt="My Closet logo">
+    <div id="brand"><h1>MY CLOSET</h1></div>
+
+    <button id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">&#9776;</button>
+
+    <nav id="main-nav">
+      <ul>
+        <li><a href="../home/index.html">Home</a></li>
+        <li><a href="../closet/index.html">My Closet</a></li>
+        <li><a href="../create-outfit/index.html">Create Outfit</a></li>
+        <li><a href="../lookbook/index.html">Lookbook</a></li>
+        <li><a href="../upload-item/index.html">Upload Item</a></li>
+        <li><a href="../contact/index.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="center">
+    <h2>Contact Us</h2>
+    <p class="muted">Questions, feedback, or ideas? We would love to hear from you.</p>
+  </section>
+
+  <section class="columns" style="margin-top:20px;">
+    <section class="two card">
+      <form class="contact-form" action="#" method="post" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+        </div>
+
+        <div class="field">
+          <label for="topic">Topic</label>
+          <select id="topic" name="topic">
+            <option value="general">General</option>
+            <option value="bug">Bug Report</option>
+            <option value="feature">Feature Request</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <aside class="one card">
+      <h3>Reach Us</h3>
+      <p><strong>Email:</strong> <a href="mailto:charlotterb3@gmail.com">Charlotterb3@gmail.com</a></p>
+      <p><strong>Phone:</strong> (720) 418-0188</p>
+    </aside>
+  </section>
+
+  <footer id="main-footer">
+    <p><strong>© Charlotte Baker</strong></p>
+  </footer>
+</div>
+
+<script src="main.js" defer></script>
+</body>
+</html>
