@@ -1,6 +1,6 @@
 [
     {
-    "uuid":"6bb97123-512a-4233-a555-46a917cec750",
+    "_id":"1",
     "title": "Cute Top",
     "type": "Top",
     "color": "white",
@@ -9,7 +9,7 @@
     },
 
     {
-    "uuid":"9f4a24dc-c5a8-4daa-a064-6a7f5756ec2e",
+    "_id":"2",
     "title": "Denim Shorts",
     "type": "Shorts",
     "color": "blue",
@@ -18,7 +18,7 @@
     },
 
     {
-    "uuid":"72bca626-52f4-4a3d-a80b-00fc7a39d17e",
+    "_id":"3",
     "title": "Comfy Sweatshirt",
     "type": "Sweatshirt",
     "color": "grey",
@@ -27,7 +27,7 @@
     },
 
     {
-    "uuid":"fc57f04b-66fc-4ff4-9f70-add197094889",
+    "_id":"4",
     "title": "Warm Sweater",
     "type": "Sweater",
     "color": "brown",
@@ -36,7 +36,7 @@
     },
 
     {
-    "uuid":"4af136e1-d74a-46fa-91f2-64482af1b945",
+    "_id":"5",
     "title": "V-neck Top",
     "type": "Top",
     "color": "white",
@@ -45,7 +45,7 @@
     },
 
     {
-    "uuid":"fd7a6860-9ca2-4f3f-8a26-630e349d7c94",
+    "_id":"6",
     "title": "Blue tank",
     "type": "Top",
     "color": "blue",
@@ -54,7 +54,7 @@
     },
 
     {
-    "uuid":"5de1ce61-8949-4a40-9350-73cb810cdd6f",
+    "_id":"7",
     "title": "Favorite Jeans",
     "type": "Pants",
     "color": "denim",
@@ -63,7 +63,7 @@
     },
 
     {
-    "uuid":"074c1648-e4ad-4627-a03e-d354b484a509",
+    "_id":"8",
     "title": "New Balances",
     "type": "Shoes",
     "color": "blue",
@@ -72,7 +72,7 @@
     },
 
     {
-    "uuid": "c54df47c-32b4-431a-857a-1bb19ee833c4",
+    "_id": "9",
     "title": "White Tee",
     "type": "Top",
     "color": "white",
@@ -81,7 +81,7 @@
     },
 
     {
-    "uuid": "ff11cae1-d366-4fc2-8650-9e8809ba5ec9",
+    "_id": "10",
     "title": "Light Jeans",
     "type": "Pants",
     "color": "denim",
@@ -90,7 +90,7 @@
     },
 
     {
-    "uuid": "de38c06d-fb63-445d-9ba5-bf79a4fe915a",
+    "_id": "11",
     "title": "Stripe Shorts",
     "type": "Shorts",
     "color": "blue",
@@ -99,7 +99,7 @@
     },
 
     {
-    "uuid": "d74369dc-b324-4a18-93a4-b0a9717b70ca",
+    "_id": "12",
     "title": "Silk Top",
     "type": "Top",
     "color": "white",
@@ -108,7 +108,7 @@
     },
 
     {
-    "uuid": "89d451b4-edb2-4487-a509-b6f1662256ce",
+    "_id": "13",
     "title": "Mini Heels",
     "type": "Shoes",
     "color": "navy",
@@ -117,7 +117,7 @@
     },
 
     {
-    "uuid": "c54df47c-32b4-431a-857a-1bb19ee833c4",
+    "_id": "14",
     "title": "Sandals",
     "type": "Shoes",
     "color": "black",
