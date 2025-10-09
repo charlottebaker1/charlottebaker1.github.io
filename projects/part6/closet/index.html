@@ -34,31 +34,38 @@
         <h2>WELCOME TO YOUR CLOSET!</h2>
     </section>
 
+
     <section class="columns">
         <aside class="one">
-            <h3><em>Find what you're looking for...</em></h3>
+            <h3><em>Find what you're looking for…</em></h3>
         </aside>
+
         <section class="three">
-            <div class="columns">
-                <div class="one">
-                    <p class="muted">Type</p>
-                    <div class="fake-select">Pants</div>
-                </div>
-                <div class="one">
-                    <p class="muted">Color</p>
-                    <div class="fake-select">White</div>
-                </div>
-                <div class="one">
-                    <p class="muted">Season</p>
-                    <div class="fake-select">Winter</div>
-                </div>
+            <form id="filters" class="toolbar" onsubmit="return false;">
+            <div>
+                <label class="muted" for="filter-type">Type</label>
+                <select id="filter-type">
+                <option value="all">All</option>
+                </select>
             </div>
-            <p>
-                <span class="tag">Top</span>
-                <span class="tag">Green</span>
-            </p>
+
+            <div>
+                <label class="muted" for="filter-color">Color</label>
+                <select id="filter-color">
+                <option value="all">All</option>
+                </select>
+            </div>
+
+            <div>
+                <label class="muted" for="filter-season">Season</label>
+                <select id="filter-season">
+                <option value="all">All</option>
+                </select>
+            </div>
+            </form>
         </section>
     </section>
+
 
     <hr>
 
