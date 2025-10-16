@@ -1,0 +1,129 @@
+[
+    {
+    "_id":"1",
+    "title": "Cute Top",
+    "type": "Top",
+    "color": "white",
+    "season": "Spring",
+    "img":"images/frilltop.png"
+    },
+
+    {
+    "_id":"2",
+    "title": "Denim Shorts",
+    "type": "Shorts",
+    "color": "blue",
+    "season": "Summer",
+    "img": "images/shorts.png"
+    },
+
+    {
+    "_id":"3",
+    "title": "Comfy Sweatshirt",
+    "type": "Sweatshirt",
+    "color": "grey",
+    "season": "Fall",
+    "img": "images/sweatshirt.png"
+    },
+
+    {
+    "_id":"4",
+    "title": "Warm Sweater",
+    "type": "Sweater",
+    "color": "brown",
+    "season": "Winter",
+    "img": "images/sweater.png"
+    },
+
+    {
+    "_id":"5",
+    "title": "V-neck Top",
+    "type": "Top",
+    "color": "white",
+    "season": "Spring",
+    "img":"images/whitetop.png"
+    },
+
+    {
+    "_id":"6",
+    "title": "Blue tank",
+    "type": "Top",
+    "color": "blue",
+    "season": "Summer",
+    "img": "images/bluetop.png"
+    },
+
+    {
+    "_id":"7",
+    "title": "Favorite Jeans",
+    "type": "Pants",
+    "color": "denim",
+    "season": "Winter",
+    "img": "images/jeans.png"
+    },
+
+    {
+    "_id":"8",
+    "title": "New Balances",
+    "type": "Shoes",
+    "color": "blue",
+    "season": "Summer",
+    "img": "images/sneakers.png"
+    },
+
+    {
+    "_id": "9",
+    "title": "White Tee",
+    "type": "Top",
+    "color": "white",
+    "season": "Spring",
+    "img": "images/tee.png"
+    },
+
+    {
+    "_id": "10",
+    "title": "Light Jeans",
+    "type": "Pants",
+    "color": "denim",
+    "season": "Summer",
+    "img": "images/denim.png"
+    },
+
+    {
+    "_id": "11",
+    "title": "Stripe Shorts",
+    "type": "Shorts",
+    "color": "blue",
+    "season": "Spring",
+    "img": "images/casshorts.png"
+    },
+
+    {
+    "_id": "12",
+    "title": "Silk Top",
+    "type": "Top",
+    "color": "white",
+    "season": "Summer",
+    "img": "images/silk.png"
+    },
+
+    {
+    "_id": "13",
+    "title": "Mini Heels",
+    "type": "Shoes",
+    "color": "navy",
+    "season": "Fall",
+    "img": "images/miniheels.png"
+    },
+
+    {
+    "_id": "14",
+    "title": "Sandals",
+    "type": "Shoes",
+    "color": "black",
+    "season": "Fall",
+    "img": "images/sandals.png"
+    }
+
+
+]

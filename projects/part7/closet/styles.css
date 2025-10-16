@@ -351,60 +351,26 @@ hr {
 }
 
 #main-nav a.active { font-weight: inherit; }
-#main-nav a { white-space: nowrap; font-weight: 500; }   
-#main-nav a.active { font-weight: inherit; }          
 
-#main-nav a.active {
-  background: var(--accent);
-  color: var(--accent-ink);
-  border-color: var(--accent);
+.toolbar {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  align-items: end;
 }
-
-/* Attempt at fixing nav stability */
-
-#main-header #main-nav ul li a,
-#main-header #main-nav ul li a:hover,
-#main-header #main-nav ul li a:focus,
-#main-header #main-nav ul li a.active {
-  font-weight: 500 !important; 
-  line-height: 1 !important;   
-  padding: 8px 12px !important; 
-  border-width: 1px !important;  
-  white-space: nowrap;       
-  font-synthesis: none;        
-}
-
-#main-header #main-nav ul li a.active {
-  background: var(--accent) !important;
-  color: var(--accent-ink) !important;
-  border-color: var(--accent) !important;
-}
-
-.map-container {
-  margin-top: 8px;
-  border-radius: 10px; 
-  overflow: hidden;    
-}
-
-#contact-map {
+.toolbar label { display:block; font-weight:600; margin-bottom:6px; }
+.toolbar select {
   width: 100%;
-  aspect-ratio: 4 / 3;   
-  display: block;
-  border: 0;   
+  height: 44px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--panel);
+  color: var(--ink);
+  font: inherit;
 }
-
-@media (min-width: 1100px) {
-  #contact-map { aspect-ratio: 16 / 9; }
+@media only screen and (max-width:900px) {
+  .toolbar { grid-template-columns: 1fr; }
 }
-
-@media (max-width: 540px) {
-  #contact-map { aspect-ratio: 1 / 1; }
-}
-
-@supports not (aspect-ratio: 1) {
-  #contact-map { height: 320px; }
-}
-
-
 
 

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My Closet - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<script src="main.js" defer></script>
+<div id="content">
+    
+<header id="main-header">
+  <img src="images/logo.png" alt="My Closet logo">
+  <div id="brand"><h1>MY CLOSET</h1></div>
+
+  <button id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">&#9776;</button>
+
+  <nav id="main-nav">
+    <ul>
+      <li><a href="../home/index.html">Home</a></li>
+      <li><a href="../closet/index.html">My Closet</a></li>
+      <li><a href="../create-outfit/index.html"class="active">Create Outfit</a></li>
+      <li><a href="../lookbook/index.html">Lookbook</a></li>
+      <li><a href="../upload-item/index.html">Upload Item</a></li>
+      <li><a href="../contact/index.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+    <section class="center">
+        <h2>CREATE AN OUTFIT!</h2>
+    </section>
+
+    <section class="columns card" style="align-items:center;">
+        <aside class="one"><strong>Search for an item here.</strong></aside>
+        <div class="one">Tag</div>
+        <div class="three"><div class="fake-input">Please enter</div></div>
+        <div class="one center"><a class="btn" href="#">Add Item</a></div>
+    </section>
+
+    <section class="columns" style="margin-top:20px;">
+        <section class="three card">
+            <div class="outfit-canvas">
+                <img class="a" src="images/top.jpg" alt="" height="140" width="130">
+                <img class="b" src="images/sweater.jpg" alt="" height="140" width="130">
+                <img class="c" src="images/jeans.jpg" alt="" height="200" width="130">
+                <img class="d" src="images/shoes.jpg" alt="" height="100" width="140">
+            </div>
+        </section>
+        <aside class="two sidebar">
+            <h3>Add Tags</h3>
+            <p><label><input type="checkbox"> Fancy</label></p>
+            <p><label><input type="checkbox"> Dinner</label></p>
+            <p><label><input type="checkbox"> Summer Vibe</label></p>
+            <p><label><input type="checkbox"> Everyday</label></p>
+            <p class="muted">Custom Tag</p>
+            <div class="fake-input">Please enter</div>
+        </aside>
+    </section>
+
+    <div class="center" style="margin:30px 0;">
+        <a class="btn" href="../lookbook/index.html">Save Outfit!</a>
+    </div>
+
+    
+<footer id="main-footer">
+    <p><strong>Copyright Charlotte Baker</strong></p>
+        <p>Images all credited to Pinterest</p>
+</footer>
+
+</div>
+</body>
+</html>
